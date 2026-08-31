@@ -1,56 +1,59 @@
-# Pro-Dent Club — Executive Welcome Email Template
+# Pro-Dent Club Email Templates
 
-An elegant, responsive HTML email template designed for **Pro-Dent Club** (Canada's #1 Dental GPO). Built with a custom **Letter/Invitation Card Theme**, cross-client email compatibility, and clean brand typography.
+This workspace contains multiple Pro-Dent Club email layout variations and a welcome email design built for responsive HTML email rendering.
 
----
-
-## 🌟 Key Features & Design Highlights
-
-* **✉️ Invitation Letter Theme Outer Border**:
-  * Premium sharp-edged letterhead frame featuring double-inset borders (`#C9B8A3` & `#E4D8C9`) that emulate an authentic executive invitation card.
-* **👑 Minimal Crown Badge**:
-  * Sleek geometric 3-point crown stroke badge placed prominently above the main logo for a clean, non-AI aesthetic.
-* **🏢 Brand Color Typography & Sign-off**:
-  * Left-aligned, typed sign-off using **Poppins** font and official Pro-Dent Club brand colors (`#062C33` Dark Teal & `#50AFDB` Shakespeare Blue).
-  * Includes official slogan: `"Where Dentistry Goes Pro."`
-* **🎨 Enhanced Vendor Outreach Section**:
-  * Visually distinct dark section with gold gradient accent strip (`#A06828`), envelope icon, and decorative gold divider.
-* **🔗 Clickable Branding**:
-  * Both header and sign-off logos link directly to [prodentclub.com](https://prodentclub.com).
-* **📱 Responsive & Cross-Client Ready**:
-  * Works seamlessly across mobile devices, desktop screens, and major email clients including Outlook (MSO fallback tables included).
+The templates are designed for email clients, especially Outlook and mobile clients, using table-based layout patterns with inline CSS and media-query fallbacks.
 
 ---
 
-## 📁 File Structure
+## Included Files
 
-```text
-├── index.html     # Main HTML Email Template
-└── README.md      # Project Documentation
-```
-
----
-
-## 🛠️ Technology & Specifications
-
-* **Language**: HTML5 / Inline CSS (Email Compatible)
-* **Fonts**: `Poppins`, `Georgia`, `Encode Sans`, `Inter`, `Roboto`
-* **Brand Palette**:
-  * Primary Dark Teal: `#062C33`
-  * Accent Blue: `#50AFDB`
-  * Warm Gold / Beige: `#A06828` / `#F6F1EA`
-  * Dark Espresso: `#2B1B17`
-* **Width**: 600px Max Container Width (Standard Email Specification)
+- `index.html` — base email layout / reference template
+- `v1.html` — version 1 layout with 3-step process section
+- `welcom.html` — welcome email version with warm card layout and rounded borders
+- `final.html` — final revised version
+- `second.html` — alternate layout
+- `third.html` — alternate layout
+- `variation-1.html` — variation 1
+- `variation-2.html` — variation 2
+- `variation-3.html` — variation 3
+- `README.md` — project documentation
 
 ---
 
-## 🚀 Deployment Instructions (Vercel)
+## Design Notes
 
-To push updates and auto-deploy to Vercel:
+- Email-first HTML structure using tables for compatibility
+- Responsive behavior through media queries
+- Pro-Dent Club branding colors and premium dental GPO styling
+- Dark premium sections, gold accents, cream backgrounds, and warm neutral tones
+- CTA buttons, partner cards, stats sections, and onboarding-style welcome copy
+
+---
+
+## Common Styling Approach
+
+- Inline CSS for critical email rendering
+- Hardcoded mobile padding and widths for Outlook-safe layouts
+- Border radii and card containers for modern presentation
+- Support for Microsoft Outlook via conditional comments and VML fallback
+
+---
+
+## Suggested Workflow
+
+1. Open the needed version file in the browser or email preview tool.
+2. Update copy, layout spacing, or styling as required.
+3. Test in a mobile email preview and Outlook-compatible environment.
+4. Copy the approved version into the final production file when needed.
+
+---
+
+## Git Usage
 
 ```bash
-git add index.html README.md
-git commit -m "Update email template with Letter Theme and updated branding"
+git add .
+git commit -m "Update Pro-Dent Club email template"
 git push origin main
 ```
 
