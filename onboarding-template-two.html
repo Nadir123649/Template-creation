@@ -44,10 +44,28 @@
             margin: 0 !important;
             padding: 0 !important;
             width: 100% !important;
+            min-width: 100% !important;
             height: 100% !important;
             -webkit-text-size-adjust: 100%;
             -ms-text-size-adjust: 100%;
-            background-color: #F2EFEA;
+            background-color: #121317 !important;
+        }
+
+        body {
+            -webkit-font-smoothing: antialiased;
+            background-color: #121317 !important;
+        }
+
+        .email-container {
+            width: 602px;
+            max-width: 602px;
+            background-color: #FAF7F2;
+        }
+
+        .inner-container {
+            width: 564px;
+            max-width: 564px;
+            background-color: #FAF7F2;
         }
 
         * {
@@ -205,32 +223,33 @@
         &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
     </div>
 
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"
-        style="background-color: #121317;">
-        <tr>
-            <td align=" center" class="outer-td" style="padding: 16px 8px 32px 8px;">
+    <center style="width:100%; background-color:#121317; padding:0;">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"
+            style="background-color: #121317;">
+            <tr>
+                <td align="center" class="outer-td" style="padding: 16px 8px 32px 8px;">
 
-                <!--[if (gte mso 9)|(IE)]>
-        <table align="center" border="0" cellpadding="0" cellspacing="0" width="602" role="presentation">
-        <tr>
-        <td style="padding: 0;">
-        <![endif]-->
+                    <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="602" role="presentation">
+            <tr>
+            <td style="padding: 0;">
+            <![endif]-->
 
-                <!-- ══════════════════════════════════════════════════════ -->
-                <!-- OUTER BOUNDED CONTAINER (602px with 3px #C8963E border) -->
-                <!-- ══════════════════════════════════════════════════════ -->
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"
-                    class="email-container"
-                    style="width: 100%; max-width: 602px; background-color: #FAF7F2; border: 3px solid #C8963E; box-sizing: border-box; margin: 0 auto;">
-                    <tr>
-                        <td align="center" class="outer-cell" style="padding: 16px 16px 16px 16px;">
+                    <!-- ══════════════════════════════════════════════════════ -->
+                    <!-- OUTER BOUNDED CONTAINER (602px with 3px #C8963E border) -->
+                    <!-- ══════════════════════════════════════════════════════ -->
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="602"
+                        class="email-container"
+                        style="width: 602px; max-width: 602px; background-color: #FAF7F2; border: 3px solid #C8963E; box-sizing: border-box; margin: 0 auto;">
+                        <tr>
+                            <td align="center" class="outer-cell" style="padding: 16px 16px 16px 16px;">
 
-                            <!-- ══════════════════════════════════════════════════════ -->
-                            <!-- INNER FRAMED CONTAINER (564px with 1px #C8963E border) -->
-                            <!-- ══════════════════════════════════════════════════════ -->
-                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"
-                                class="inner-container"
-                                style="width: 100%; max-width: 564px; background-color: #FAF7F2; border: 1px solid #C8963E; box-sizing: border-box; margin: 0 auto;">
+                                <!-- ══════════════════════════════════════════════════════ -->
+                                <!-- INNER FRAMED CONTAINER (564px with 1px #C8963E border) -->
+                                <!-- ══════════════════════════════════════════════════════ -->
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="564"
+                                    class="inner-container"
+                                    style="width: 564px; max-width: 564px; background-color: #FAF7F2; border: 1px solid #C8963E; box-sizing: border-box; margin: 0 auto;">
 
                                 <!-- ══════════════════════════════════════════════════════ -->
                                 <!-- 1. HEADER (BLACK, spans full 564px width)               -->
@@ -1071,6 +1090,7 @@
     </td>
     </tr>
     </table>
+    </center>
 
 </body>
 
