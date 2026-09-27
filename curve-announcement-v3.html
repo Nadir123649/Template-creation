@@ -25,21 +25,6 @@
     <style>
         table, td { mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; }
         body, td, div, p, a { mso-line-height-rule: exactly; }
-    
-        @media screen and (max-width: 620px) {
-            .faq-col {
-                display: block !important;
-                width: 100% !important;
-                max-width: 100% !important;
-                padding-left: 0 !important;
-                padding-right: 0 !important;
-                padding-bottom: 12px !important;
-            }
-            .faq-card-cell {
-                padding: 14px 12px !important;
-            }
-        }
-
     </style>
     <![endif]-->
 
@@ -63,6 +48,8 @@
             width: 100% !important;
             min-width: 100% !important;
             background-color: #121317 !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
         }
 
         body {
@@ -157,7 +144,6 @@
                 max-width: 100% !important;
             }
 
-            /* Single source of truth for mobile side gutters. */
             .mpx {
                 padding-left: 18px !important;
                 padding-right: 18px !important;
@@ -179,19 +165,27 @@
                 padding-bottom: 14px !important;
             }
 
+            .feature-card-col {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 0 0 12px 0 !important;
+            }
+
             .hide-m {
                 display: none !important;
                 width: 0 !important;
                 max-height: 0 !important;
                 overflow: hidden !important;
+                mso-hide: all !important;
             }
 
-            .btn-wide a {
+            .btn-full {
                 display: block !important;
-                font-size: 11px !important;
-                padding-left: 12px !important;
-                padding-right: 12px !important;
-                white-space: normal !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box !important;
+                text-align: center !important;
             }
 
             .h-lead {
@@ -204,19 +198,14 @@
                 line-height: 27px !important;
             }
 
-            .h3 {
-                font-size: 18px !important;
-                line-height: 26px !important;
-            }
-
             .logo-pdc {
                 width: 150px !important;
                 max-width: 150px !important;
             }
 
             .logo-staples {
-                width: 170px !important;
-                max-width: 170px !important;
+                width: 165px !important;
+                max-width: 165px !important;
             }
 
             .frame-padding {
@@ -253,29 +242,17 @@
         .frame-padding {
             padding: 16px;
         }
-    
-        @media screen and (max-width: 620px) {
-            .faq-col {
-                display: block !important;
-                width: 100% !important;
-                max-width: 100% !important;
-                padding-left: 0 !important;
-                padding-right: 0 !important;
-                padding-bottom: 12px !important;
-            }
-            .faq-card-cell {
-                padding: 14px 12px !important;
-            }
-        }
-
     </style>
 </head>
 
-<body style="margin:0; padding:0;   background-color: #121317 !important;">
+<body style="margin:0; padding:0; background-color: #121317 !important;">
 
     <!-- PREHEADER: inbox preview line. Trailing entities stop Gmail pulling body copy in. -->
     <div
-        style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all; color:#F2F0ED;">Curve Dental is now a Pro-Dent Club partner - claim 3 months free plus 100% free white-glove data integration.&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
+        style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all; color:#F2F0ED;">
+        Curve Dental is now a Pro-Dent Club partner &mdash; claim 3 months free plus 100% free white-glove data
+        integration.
+        &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
     </div>
 
     <center style="width:100%; background-color:#121317; padding:30px 0 40px 0;">
@@ -292,14 +269,14 @@
             <tr>
                 <td style="padding:0;">
 
-                    <!-- OUTER LETTER CONTAINER -->
+                    <!-- OUTER LETTER CONTAINER (STAPLES STANDARD) -->
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="dm-cream"
                         bgcolor="#F2F0ED" style="background-color:#F2F0ED; border:3px solid #C8963E;">
 
                         <tr>
                             <td class="frame-padding" style="padding:16px;">
 
-                                <!-- INNER LETTER BORDER -->
+                                <!-- INNER LETTER BORDER (STAPLES STANDARD) -->
                                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
                                     class="dm-cream" bgcolor="#F2F0ED"
                                     style="background-color:#F2F0ED; border:1px solid #C8963E;">
@@ -325,68 +302,234 @@
                                         </td>
                                     </tr>
 
-                                    <!-- ══════════════════════════════════════════════════════ -->
-                                    
 
                                     <!-- ══════════════════════════════════════════════════════ -->
-                                    <!-- CO-BRAND LOCKUP: P-DC + Curve Dental                   -->
+                                    <!-- CO-BRAND LOCKUP: P-DC + Staples Professional           -->
                                     <!-- ══════════════════════════════════════════════════════ -->
                                     <tr>
                                         <td class="dm-cream mpx" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:38px 40px 32px 40px;">
+                                            style="background-color:#F2F0ED; padding:26px 30px 24px 30px;">
+
                                             <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
                                                 border="0">
                                                 <tr>
-                                                    <!-- P-DC LOGO -->
-                                                    <td width="42%" align="center" valign="middle" class="stack">
-                                                        <a href="https://www.prodentclub.com/" target="_blank">
-                                                            <img src="https://res.cloudinary.com/dgstbxgwt/image/upload/c_crop,x_50,y_165,w_374,h_155/v1784648049/P-DC_Logo_toujnu.png"
-                                                                width="155" alt="Pro-Dent Club" class="logo-pdc"
-                                                                style="display:block; width:155px; max-width:155px; height:auto; margin:0 auto;">
-                                                        </a>
+
+                                                    <td width="42%" align="center" valign="middle"
+                                                        class="stack stack-pad" style="padding-right:14px;">
+                                                        <img class="logo-pdc"
+                                                            src="https://res.cloudinary.com/dgstbxgwt/image/upload/c_crop,x_50,y_165,w_374,h_155/v1784648049/P-DC_Logo_toujnu.png"
+                                                            width="155" alt="Pro-Dent Club"
+                                                            style="display:block; width:155px; max-width:155px; height:auto; margin:0 auto;">
                                                     </td>
 
-                                                    <!-- MULTIPLY SIGN with hairlines -->
-                                                    <td width="16%" align="center" valign="middle" class="stack stack-pad">
+                                                    <td width="16%" align="center" valign="middle" class="hide-m"
+                                                        style="font-size:0; padding:0 12px;">
                                                         <table role="presentation" cellpadding="0" cellspacing="0"
                                                             border="0" align="center">
+                                                            <!-- Top Line -->
                                                             <tr>
-                                                                <td align="center"
-                                                                    style="font-family:'Playfair Display',Georgia,serif; font-size:17px; line-height:22px; color:#1E1E20; padding:0 10px;">
-                                                                    <div
-                                                                        style="width:1px; height:14px; background-color:#C8963E; margin:0 auto 6px auto;">
-                                                                    </div>
+                                                                <td align="center">
+                                                                    <table role="presentation" cellpadding="0"
+                                                                        cellspacing="0" border="0">
+                                                                        <tr>
+                                                                            <td width="1" bgcolor="#121317"
+                                                                                style="width:1px; height:20px; background-color:#121317; font-size:0; line-height:0;">
+                                                                                &nbsp;</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- Center X -->
+                                                            <tr>
+                                                                <td align="center" valign="middle"
+                                                                    style="padding:5px 0; font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:26px; line-height:26px; font-weight:700; color:#121317; text-align:center;">
                                                                     &times;
-                                                                    <div
-                                                                        style="width:1px; height:14px; background-color:#C8963E; margin:6px auto 0 auto;">
-                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- Bottom Line -->
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <table role="presentation" cellpadding="0"
+                                                                        cellspacing="0" border="0">
+                                                                        <tr>
+                                                                            <td width="1" bgcolor="#121317"
+                                                                                style="width:1px; height:20px; background-color:#121317; font-size:0; line-height:0;">
+                                                                                &nbsp;</td>
+                                                                        </tr>
+                                                                    </table>
                                                                 </td>
                                                             </tr>
                                                         </table>
                                                     </td>
 
-                                                    <!-- CURVE DENTAL LOGO -->
-                                                    <td width="42%" align="center" valign="middle" class="stack">
+                                                    <td width="42%" align="center" valign="middle"
+                                                        class="stack stack-pad" style="padding-left:14px;">
                                                         <a href="https://www.curvedental.com/" target="_blank">
-                                                            <img src="https://res.cloudinary.com/qi6tz0xr/image/upload/v1790512501/curve-logo-horizontal-removebg-preview.png"
-                                                                width="165" alt="Curve Dental" class="logo-staples"
-                                                                style="display:block; width:165px; max-width:165px; height:auto; margin:0 auto;">
+                                                            <img src="https://res.cloudinary.com/qi6tz0xr/image/upload/v1790515130/image_413-removebg-preview.png"
+                                                                width="120" alt="Curve Dental"
+                                                                style="display:block; width:120px; max-width:120px; height:auto; margin:0 auto;">
                                                         </a>
+                                                    </td>
+
+                                                </tr>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+
+                                    <!-- GOLD ACCENT RULE (left-weighted, full bleed) -->
+                                    <tr>
+                                        <td class="dm-cream" bgcolor="#F2F0ED"
+                                            style="background-color:#F2F0ED; padding:0;">
+                                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                                                border="0">
+                                                <tr>
+                                                    <td width="46%" height="1" bgcolor="#C8963E"
+                                                        style="background-color:#C8963E; height:1.5px; font-size:0; line-height:0;">
+                                                        &nbsp;</td>
+                                                    <td width="54%" height="1.5"
+                                                        style="height:1.5px; font-size:0; line-height:0;">&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+
+                                    <!-- ══════════════════════════════════════════════════════ -->
+                                    <!-- HERO: HIGH-CONVERSION VALUE-STACK                     -->
+                                    <!-- ══════════════════════════════════════════════════════ -->
+                                    <tr>
+                                        <td align="center" class="dm-cream mpx" bgcolor="#F2F0ED"
+                                            style="background-color:#F2F0ED; padding:18px 36px 12px 36px;">
+                                            <div
+                                                style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:2px; color:#7E5C1C; text-transform:uppercase; padding-bottom:10px;">
+                                                EXCLUSIVE PARTNER ANNOUNCEMENT
+                                            </div>
+                                            <div class="h1 dm-ink"
+                                                style="font-family:'Playfair Display',Georgia,serif; font-size:30px; line-height:38px; font-weight:700; color:#1E1E20; max-width:520px; margin:0 auto;">
+                                                The Modern Cloud Practice Management Platform.
+                                            </div>
+                                            <div class="lead-text dm-ink"
+                                                style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:14px; line-height:22px; color:#4A4844; max-width:490px; margin:14px auto 0 auto;">
+                                                Everything you need to run, grow, and modernize your practice &mdash;
+                                                bundled with exclusive Pro-Dent Club member benefits.
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- VALUE CHECKLIST BOX -->
+                                    <tr>
+                                        <td align="center" class="dm-cream mpx" bgcolor="#F2F0ED"
+                                            style="background-color:#F2F0ED; padding:18px 30px 24px 30px;">
+                                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                                                border="0" class="dm-white" bgcolor="#FFFFFF"
+                                                style="background-color:#FFFFFF; border:1.5px solid #C8963E; border-radius:8px; border-collapse:separate !important; max-width:500px;">
+                                                <tr>
+                                                    <td style="padding:22px 24px;">
+                                                        <div
+                                                            style="text-align:center; padding-bottom:12px; margin-bottom:16px; border-bottom:1px solid #ECE8E0;">
+                                                            <span
+                                                                style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:9.5px; line-height:14px; font-weight:800; letter-spacing:1.2px; color:#7E5C1C; text-transform:uppercase; white-space:nowrap;">
+                                                                &#10022; &nbsp; INCLUDED WITH YOUR FREE PRO-DENT CLUB
+                                                                MEMBERSHIP &nbsp; &#10022;
+                                                            </span>
+                                                        </div>
+
+                                                        <!-- ITEM 1 -->
+                                                        <table role="presentation" width="100%" cellpadding="0"
+                                                            cellspacing="0" border="0" style="margin-bottom:10px;">
+                                                            <tr>
+                                                                <td width="22" valign="top"
+                                                                    style="font-family:'Rethink Sans',sans-serif; font-size:15px; line-height:20px; font-weight:700; color:#7E5C1C;">
+                                                                    &#10003;
+                                                                </td>
+                                                                <td valign="top" class="dm-ink"
+                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:13px; line-height:20px; font-weight:600; color:#1E1E20;">
+                                                                    3 Full Months Free Cloud Practice Management
+                                                                    Software
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+
+                                                        <!-- ITEM 2 -->
+                                                        <table role="presentation" width="100%" cellpadding="0"
+                                                            cellspacing="0" border="0" style="margin-bottom:10px;">
+                                                            <tr>
+                                                                <td width="22" valign="top"
+                                                                    style="font-family:'Rethink Sans',sans-serif; font-size:15px; line-height:20px; font-weight:700; color:#7E5C1C;">
+                                                                    &#10003;
+                                                                </td>
+                                                                <td valign="top" class="dm-ink"
+                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:13px; line-height:20px; font-weight:600; color:#1E1E20;">
+                                                                    100% Free Done-by-Us Data &amp; Chart Integration
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+
+                                                        <!-- ITEM 3 -->
+                                                        <table role="presentation" width="100%" cellpadding="0"
+                                                            cellspacing="0" border="0" style="margin-bottom:10px;">
+                                                            <tr>
+                                                                <td width="22" valign="top"
+                                                                    style="font-family:'Rethink Sans',sans-serif; font-size:15px; line-height:20px; font-weight:700; color:#7E5C1C;">
+                                                                    &#10003;
+                                                                </td>
+                                                                <td valign="top" class="dm-ink"
+                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:13px; line-height:20px; font-weight:600; color:#1E1E20;">
+                                                                    Tailored 1-on-1 Workflow Walkthrough &amp; Staff
+                                                                    Training
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+
+                                                        <!-- ITEM 4 -->
+                                                        <table role="presentation" width="100%" cellpadding="0"
+                                                            cellspacing="0" border="0">
+                                                            <tr>
+                                                                <td width="22" valign="top"
+                                                                    style="font-family:'Rethink Sans',sans-serif; font-size:15px; line-height:20px; font-weight:700; color:#7E5C1C;">
+                                                                    &#10003;
+                                                                </td>
+                                                                <td valign="top" class="dm-ink"
+                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:13px; line-height:20px; font-weight:600; color:#1E1E20;">
+                                                                    Zero Upfront Fees &bull; Zero Server Hardware Costs
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+
                                                     </td>
                                                 </tr>
                                             </table>
                                         </td>
                                     </tr>
 
-                                    <!-- GOLD ACCENT HAIRLINE -->
+                                    <!-- PRIMARY GOLD CTA BUTTON (#1 BOOK A DEMO LINK) -->
                                     <tr>
-                                        <td class="dm-cream" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:0 40px;">
+                                        <td align="center" class="dm-cream mpx" bgcolor="#F2F0ED"
+                                            style="background-color:#F2F0ED; padding:0 30px 32px 30px;">
+                                            <!--[if mso]>
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.curvedental.com/" style="height:46px;v-text-anchor:middle;width:250px;" arcsize="12%" stroke="f" fillcolor="#C8963E">
+                                            <w:anchorlock/>
+                                            <center style="color:#ffffff;font-family:Georgia,'Times New Roman',serif;font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;">BOOK YOUR FREE DEMO &rarr;</center>
+                                            </v:roundrect>
+                                            <![endif]-->
+                                            <!--[if !mso]><!-->
+                                            <a href="https://www.curvedental.com/" target="_blank" class="btn-full"
+                                                style="display:inline-block; background-color:#C8963E; color:#FFFFFF; font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:12px; line-height:16px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-decoration:none; padding:15px 36px; border-radius:6px; box-shadow:0 3px 10px rgba(200,150,62,0.25);">
+                                                BOOK YOUR FREE DEMO &rarr;
+                                            </a>
+                                            <!--<![endif]-->
+                                        </td>
+                                    </tr>
+
+                                    <!-- ACCENT DIVIDER LINE -->
+                                    <tr>
+                                        <td class="dm-cream" bgcolor="#F2F0ED" style="padding:0 40px 28px 40px;">
                                             <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
                                                 border="0">
                                                 <tr>
-                                                    <td height="1" bgcolor="#C8963E"
-                                                        style="height:1px; background-color:#C8963E; font-size:0; line-height:0;">
+                                                    <td height="1" bgcolor="#D6D3CE"
+                                                        style="height:1px; background-color:#D6D3CE; font-size:0; line-height:0;">
                                                         &nbsp;</td>
                                                 </tr>
                                             </table>
@@ -394,238 +537,208 @@
                                     </tr>
 
                                     <!-- ══════════════════════════════════════════════════════ -->
-                                    <!-- HERO: HIGH-CONVERSION VALUE-STACK                    -->
+                                    <!-- 3 FEATURE CARDS: WHY CURVE IS BUILT FOR INDEPENDENT   -->
                                     <!-- ══════════════════════════════════════════════════════ -->
                                     <tr>
                                         <td align="center" class="dm-cream mpx" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:36px 36px 12px 36px;">
-                                            <div
-                                                style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:2px; color:#7E5C1C; text-transform:uppercase; padding-bottom:10px;">
-                                                EXCLUSIVE PARTNER ANNOUNCEMENT
-                                            </div>
-                                            <div class="h1 dm-ink"
-                                                style="font-family:'Playfair Display',Georgia,serif; font-size:28px; line-height:35px; font-weight:700; color:#1E1E20; max-width:520px; margin:0 auto;">
-                                                The Modern Cloud Practice Management Platform.
-                                            </div>
-                                            <div class="lead-text dm-ink"
-                                                style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:14px; line-height:22px; color:#4A4844; max-width:490px; margin:14px auto 0 auto;">
-                                                Everything you need to run, grow, and modernize your practice - bundled with exclusive Pro-Dent Club member benefits.
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <!-- VALUE CHECKLIST BOX (ROUNDED CORNERS, BROWN TICKS, STAR ICON HEADER) -->
-                                    <tr>
-                                        <td align="center" class="dm-cream mpx" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:18px 30px 24px 30px;">
-                                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-                                                class="dm-white" bgcolor="#FFFFFF"
-                                                style="background-color:#FFFFFF; border:1.5px solid #C8963E; border-radius:8px; border-collapse:separate !important; max-width:500px;">
-                                                <tr>
-                                                    <td style="padding:22px 24px;">
-                                                        <div style="text-align:center; padding-bottom:12px; margin-bottom:16px; border-bottom:1px solid #ECE8E0;">
-                                                            <span style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:9.5px; line-height:14px; font-weight:800; letter-spacing:1.2px; color:#7E5C1C; text-transform:uppercase; white-space:nowrap;">
-                                                                &#10022; &nbsp; INCLUDED WITH YOUR FREE PRO-DENT CLUB MEMBERSHIP &nbsp; &#10022;
-                                                            </span>
-                                                        </div>
-
-                                                        <!-- ITEM 1 -->
-                                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:10px;">
-                                                            <tr>
-                                                                <td width="22" valign="top" style="font-family:'Rethink Sans',sans-serif; font-size:15px; line-height:20px; font-weight:700; color:#7E5C1C;">
-                                                                    &#10003;
-                                                                </td>
-                                                                <td valign="top" class="dm-ink"
-                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:13px; line-height:20px; font-weight:600; color:#1E1E20;">
-                                                                    3 Full Months Free Cloud Practice Management Software
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-
-                                                        <!-- ITEM 2 -->
-                                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:10px;">
-                                                            <tr>
-                                                                <td width="22" valign="top" style="font-family:'Rethink Sans',sans-serif; font-size:15px; line-height:20px; font-weight:700; color:#7E5C1C;">
-                                                                    &#10003;
-                                                                </td>
-                                                                <td valign="top" class="dm-ink"
-                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:13px; line-height:20px; font-weight:600; color:#1E1E20;">
-                                                                    Free Done-By-Us Data &amp; Chart Integration (Zero downtime)
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-
-                                                        <!-- ITEM 3 -->
-                                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:10px;">
-                                                            <tr>
-                                                                <td width="22" valign="top" style="font-family:'Rethink Sans',sans-serif; font-size:15px; line-height:20px; font-weight:700; color:#7E5C1C;">
-                                                                    &#10003;
-                                                                </td>
-                                                                <td valign="top" class="dm-ink"
-                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:13px; line-height:20px; font-weight:600; color:#1E1E20;">
-                                                                    Custom Workflow Mapping &amp; Dedicated Staff Onboarding
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-
-                                                        <!-- ITEM 4 -->
-                                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                                            <tr>
-                                                                <td width="22" valign="top" style="font-family:'Rethink Sans',sans-serif; font-size:15px; line-height:20px; font-weight:700; color:#7E5C1C;">
-                                                                    &#10003;
-                                                                </td>
-                                                                <td valign="top" class="dm-ink"
-                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:13px; line-height:20px; font-weight:600; color:#1E1E20;">
-                                                                    24/7 Dedicated Support with Live Emergency Assistance
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-
-                                    <!-- PRIMARY RED CTA BUTTON (LIKE VARIATION 2) -->
-                                    <tr>
-                                        <td align="center" class="dm-cream mpx" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:0 30px 36px 30px;">
-                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0"
-                                                align="center">
-                                                <tr>
-                                                    <td align="center" bgcolor="#E02B20"
-                                                        style="background-color:#E02B20; border-radius:6px;">
-                                                        <a href="https://www.curvedental.com/" target="_blank"
-                                                            style="display:inline-block; padding:15px 36px; font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:13px; line-height:17px; font-weight:700; letter-spacing:1.2px; color:#FFFFFF; text-decoration:none; text-transform:uppercase; border-radius:6px;">
-                                                            Claim Your 3 Free Months &nbsp;&rarr;
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-
-                                    <!-- HAIRLINE DIVIDER -->
-                                    <tr>
-                                        <td class="dm-cream" bgcolor="#F2F0ED" style="padding:0 40px;">
-                                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                                <tr>
-                                                    <td height="1" bgcolor="#D6D3CE" style="height:1px; background-color:#D6D3CE; font-size:0; line-height:0;">&nbsp;</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-
-                                    <!-- ══════════════════════════════════════════════════════ -->
-                                    <!-- 3-STEP SEAMLESS TRANSITION ROADMAP (CLEAN EDITORIAL)    -->
-                                    <!-- ══════════════════════════════════════════════════════ -->
-                                    <tr>
-                                        <td class="dm-cream mpx" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:38px 36px 14px 36px; text-align:center;">
+                                            style="background-color:#F2F0ED; padding:0 30px 14px 30px; text-align:center;">
                                             <div
                                                 style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.8px; color:#7E5C1C; text-transform:uppercase; padding-bottom:6px;">
-                                                SEAMLESS TRANSITION
+                                                BUILT FOR INDEPENDENT DENTISTRY
                                             </div>
                                             <div class="h2 dm-ink"
-                                                style="font-family:'Playfair Display',Georgia,serif; font-size:24px; line-height:30px; font-weight:700; color:#1E1E20; max-width:480px; margin:0 auto;">
-                                                You bring the practice. We'll help move the rest.
-                                            </div>
-                                            <div class="dm-ink"
-                                                style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:13px; line-height:20px; color:#555558; max-width:460px; margin:10px auto 0 auto;">
-                                                Switching practice management software is smooth and stress-free with Curve's proven 3-phase transition methodology.
+                                                style="font-family:'Playfair Display',Georgia,serif; font-size:22px; line-height:28px; font-weight:700; color:#1E1E20;">
+                                                Complete Walkthrough &amp; Turnkey Data Setup
                                             </div>
                                         </td>
                                     </tr>
 
-                                    <!-- 3 EDITORIAL STEP ROWS -->
                                     <tr>
-                                        <td class="dm-cream mpx" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:12px 30px 24px 30px;">
+                                        <td align="center" class="mpx" style="padding:8px 24px 28px 24px;">
+                                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                                                border="0">
+                                                <tr>
+                                                    <!-- CARD 1: COMPLETE WALK THROUGH -->
+                                                    <td width="31%" valign="top" class="feature-card-col">
+                                                        <table role="presentation" width="100%" cellpadding="0"
+                                                            cellspacing="0" border="0" bgcolor="#FFFFFF"
+                                                            class="dm-white"
+                                                            style="background-color:#FFFFFF; border:1px solid #E5E2DC; border-radius:8px; border-collapse:separate !important;">
+                                                            <tr>
+                                                                <td align="center" style="padding:22px 12px 22px 12px;">
+                                                                    <table role="presentation" width="100%"
+                                                                        cellpadding="0" cellspacing="0" border="0">
+                                                                        <!-- ICON -->
+                                                                        <tr>
+                                                                            <td align="center" valign="middle"
+                                                                                height="36"
+                                                                                style="height:36px; vertical-align:middle; text-align:center;">
+                                                                                <img src="https://res.cloudinary.com/qi6tz0xr/image/upload/v1790513945/4326845.png"
+                                                                                    width="29" height="32"
+                                                                                    alt="Walkthrough"
+                                                                                    style="display:block; width:29px; max-width:29px; height:auto; max-height:32px; margin:0 auto;">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- TITLE -->
+                                                                        <tr>
+                                                                            <td align="center" valign="top" height="36"
+                                                                                style="height:36px; vertical-align:top; text-align:center; padding-top:14px;">
+                                                                                <div class="dm-ink"
+                                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:12.5px; line-height:16px; font-weight:700; color:#1E1E20;">
+                                                                                    Complete<br>Walk Through
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- DESCRIPTION -->
+                                                                        <tr>
+                                                                            <td align="center" valign="top" height="48"
+                                                                                style="height:48px; vertical-align:top; text-align:center; padding-top:8px;">
+                                                                                <div class="dm-muted"
+                                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10.5px; line-height:15px; color:#6E6C68;">
+                                                                                    Get familiar with the platform,
+                                                                                    features &amp; workflow step by
+                                                                                    step.
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
 
-                                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-                                                class="dm-white" bgcolor="#FFFFFF"
-                                                style="background-color:#FFFFFF; border:1px solid #D6D3CE; border-radius:8px; border-collapse:separate !important;">
-                                                <!-- STEP 1 -->
-                                                <tr>
-                                                    <td style="padding:18px 24px;">
-                                                        <div
-                                                            style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.5px; color:#7E5C1C; text-transform:uppercase;">
-                                                            01 &bull; SEE IT
-                                                        </div>
-                                                        <div class="dm-ink"
-                                                            style="font-family:'Playfair Display',Georgia,serif; font-size:17px; line-height:22px; font-weight:700; color:#1E1E20; padding:3px 0 4px 0;">
-                                                            Map Curve to your workflow.
-                                                        </div>
-                                                        <div
-                                                            style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:12.5px; line-height:18px; color:#555558;">
-                                                            A personalized 1-on-1 walkthrough tailored to your practice size, clinical setup, and daily operational needs.
-                                                        </div>
+                                                    <!-- GAP -->
+                                                    <td width="3.5%" class="hide-m" style="font-size:0; line-height:0;">
+                                                        &nbsp;</td>
+
+                                                    <!-- CARD 2: FREE DONE-FOR-YOU INTEGRATION -->
+                                                    <td width="31%" valign="top" class="feature-card-col">
+                                                        <table role="presentation" width="100%" cellpadding="0"
+                                                            cellspacing="0" border="0" bgcolor="#FFFFFF"
+                                                            class="dm-white"
+                                                            style="background-color:#FFFFFF; border:1px solid #E5E2DC; border-radius:8px; border-collapse:separate !important;">
+                                                            <tr>
+                                                                <td align="center" style="padding:22px 12px 22px 12px;">
+                                                                    <table role="presentation" width="100%"
+                                                                        cellpadding="0" cellspacing="0" border="0">
+                                                                        <!-- ICON -->
+                                                                        <tr>
+                                                                            <td align="center" valign="middle"
+                                                                                height="36"
+                                                                                style="height:36px; vertical-align:middle; text-align:center;">
+                                                                                <img src="https://res.cloudinary.com/qi6tz0xr/image/upload/v1790513941/654.png"
+                                                                                    width="37" height="26"
+                                                                                    alt="Integration"
+                                                                                    style="display:block; width:37px; max-width:37px; height:auto; max-height:26px; margin:0 auto;">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- TITLE -->
+                                                                        <tr>
+                                                                            <td align="center" valign="top" height="36"
+                                                                                style="height:36px; vertical-align:top; text-align:center; padding-top:14px;">
+                                                                                <div class="dm-ink"
+                                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:12.5px; line-height:16px; font-weight:700; color:#1E1E20;">
+                                                                                    Free Done-by-Us<br>Integration
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- DESCRIPTION -->
+                                                                        <tr>
+                                                                            <td align="center" valign="top" height="48"
+                                                                                style="height:48px; vertical-align:top; text-align:center; padding-top:8px;">
+                                                                                <div class="dm-muted"
+                                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10.5px; line-height:15px; color:#6E6C68;">
+                                                                                    We'll handle setup &amp; data
+                                                                                    transfer so you get running faster.
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td height="1" bgcolor="#F2F0ED" style="height:1px; background-color:#F2F0ED; font-size:0; line-height:0;">&nbsp;</td>
-                                                </tr>
-                                                <!-- STEP 2 -->
-                                                <tr>
-                                                    <td style="padding:18px 24px;">
-                                                        <div
-                                                            style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.5px; color:#7E5C1C; text-transform:uppercase;">
-                                                            02 &bull; MOVE IT
-                                                        </div>
-                                                        <div class="dm-ink"
-                                                            style="font-family:'Playfair Display',Georgia,serif; font-size:17px; line-height:22px; font-weight:700; color:#1E1E20; padding:3px 0 4px 0;">
-                                                            Plan the transition.
-                                                        </div>
-                                                        <div
-                                                            style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:12.5px; line-height:18px; color:#555558;">
-                                                            Free Done-By-Us Integration: complete chart, schedule, and imaging conversion handled by experienced dental data specialists.
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td height="1" bgcolor="#F2F0ED" style="height:1px; background-color:#F2F0ED; font-size:0; line-height:0;">&nbsp;</td>
-                                                </tr>
-                                                <!-- STEP 3 -->
-                                                <tr>
-                                                    <td style="padding:18px 24px;">
-                                                        <div
-                                                            style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.5px; color:#7E5C1C; text-transform:uppercase;">
-                                                            03 &bull; RUN IT
-                                                        </div>
-                                                        <div class="dm-ink"
-                                                            style="font-family:'Playfair Display',Georgia,serif; font-size:17px; line-height:22px; font-weight:700; color:#1E1E20; padding:3px 0 4px 0;">
-                                                            Launch with dedicated support.
-                                                        </div>
-                                                        <div
-                                                            style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:12.5px; line-height:18px; color:#555558;">
-                                                            Go live with hands-on staff training and 24/7 dedicated support from real dental practice specialists from day one.
-                                                        </div>
+
+                                                    <!-- GAP -->
+                                                    <td width="3.5%" class="hide-m" style="font-size:0; line-height:0;">
+                                                        &nbsp;</td>
+
+                                                    <!-- CARD 3: GUIDED TRANSITION & SUPPORT -->
+                                                    <td width="31%" valign="top" class="feature-card-col">
+                                                        <table role="presentation" width="100%" cellpadding="0"
+                                                            cellspacing="0" border="0" bgcolor="#FFFFFF"
+                                                            class="dm-white"
+                                                            style="background-color:#FFFFFF; border:1px solid #E5E2DC; border-radius:8px; border-collapse:separate !important;">
+                                                            <tr>
+                                                                <td align="center" style="padding:22px 12px 22px 12px;">
+                                                                    <table role="presentation" width="100%"
+                                                                        cellpadding="0" cellspacing="0" border="0">
+                                                                        <!-- ICON -->
+                                                                        <tr>
+                                                                            <td align="center" valign="middle"
+                                                                                height="36"
+                                                                                style="height:36px; vertical-align:middle; text-align:center;">
+                                                                                <img src="https://res.cloudinary.com/qi6tz0xr/image/upload/v1790513948/7553775.png"
+                                                                                    width="27" height="32" alt="Support"
+                                                                                    style="display:block; width:27px; max-width:27px; height:auto; max-height:32px; margin:0 auto;">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- TITLE -->
+                                                                        <tr>
+                                                                            <td align="center" valign="top" height="36"
+                                                                                style="height:36px; vertical-align:top; text-align:center; padding-top:14px;">
+                                                                                <div class="dm-ink"
+                                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:12.5px; line-height:16px; font-weight:700; color:#1E1E20;">
+                                                                                    Guided Transition &amp;<br>Support
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- DESCRIPTION -->
+                                                                        <tr>
+                                                                            <td align="center" valign="top" height="48"
+                                                                                style="height:48px; vertical-align:top; text-align:center; padding-top:8px;">
+                                                                                <div class="dm-muted"
+                                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10.5px; line-height:15px; color:#6E6C68;">
+                                                                                    Real people, real help whenever you
+                                                                                    need it, we are here.
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
                                                     </td>
                                                 </tr>
                                             </table>
-
                                         </td>
                                     </tr>
 
-                                    <!-- HAIRLINE DIVIDER -->
+                                    <!-- SECONDARY NAVY BUTTON (#2 BOOK A DEMO LINK) -->
                                     <tr>
-                                        <td class="dm-cream" bgcolor="#F2F0ED" style="padding:0 40px;">
-                                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                                <tr>
-                                                    <td height="1" bgcolor="#D6D3CE" style="height:1px; background-color:#D6D3CE; font-size:0; line-height:0;">&nbsp;</td>
-                                                </tr>
-                                            </table>
+                                        <td align="center" class="dm-cream mpx" bgcolor="#F2F0ED"
+                                            style="background-color:#F2F0ED; padding:0 30px 34px 30px;">
+                                            <!--[if mso]>
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.curvedental.com/" style="height:44px;v-text-anchor:middle;width:260px;" arcsize="12%" stroke="f" fillcolor="#121317">
+                                            <w:anchorlock/>
+                                            <center style="color:#ffffff;font-family:Georgia,'Times New Roman',serif;font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;">BOOK A DEMO NOW &rarr;</center>
+                                            </v:roundrect>
+                                            <![endif]-->
+                                            <!--[if !mso]><!-->
+                                            <a href="https://www.curvedental.com/" target="_blank" class="btn-full"
+                                                style="display:inline-block; background-color:#121317; color:#FFFFFF; font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:12px; line-height:16px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-decoration:none; padding:14px 28px; border-radius:6px; box-shadow:0 3px 10px rgba(18,19,23,0.22);">
+                                                BOOK A DEMO NOW &rarr;
+                                            </a>
+                                            <!--<![endif]-->
                                         </td>
                                     </tr>
-
 
                                     <!-- ══════════════════════════════════════════════════════ -->
-                                    <!-- OUTCOMES / 4-STAT GRID (BOLD & BALANCED SPACING)        -->
+                                    <!-- OUTCOMES / 4-STAT GRID                                 -->
                                     <!-- ══════════════════════════════════════════════════════ -->
                                     <tr>
                                         <td class="dm-cream mpx" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:34px 30px 4px 30px; text-align:center;">
+                                            style="background-color:#F2F0ED; padding:10px 30px 4px 30px; text-align:center;">
                                             <div
                                                 style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.8px; color:#7E5C1C; text-transform:uppercase; padding-bottom:6px;">
                                                 PROVEN PRACTICE OUTCOMES
@@ -652,7 +765,8 @@
                                                         </div>
                                                         <div
                                                             style="font-family:'Playfair Display',Georgia,serif; font-size:30px; line-height:34px; font-weight:800; color:#1E1E20; padding:4px 0 2px 0;">
-                                                            20<span style="font-size:20px; font-weight:700; color:#C8963E;">%</span>
+                                                            20<span
+                                                                style="font-size:20px; font-weight:700; color:#C8963E;">%</span>
                                                         </div>
                                                         <div
                                                             style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10.5px; line-height:14px; font-weight:600; color:#4A4844;">
@@ -661,7 +775,9 @@
                                                     </td>
 
                                                     <td width="2%" align="center" valign="middle" class="hide-m">
-                                                        <div style="width:1px; height:48px; background-color:#D6D3CE; margin:0 auto;"></div>
+                                                        <div
+                                                            style="width:1px; height:48px; background-color:#D6D3CE; margin:0 auto;">
+                                                        </div>
                                                     </td>
 
                                                     <!-- STAT 2: 25% -->
@@ -673,7 +789,8 @@
                                                         </div>
                                                         <div
                                                             style="font-family:'Playfair Display',Georgia,serif; font-size:30px; line-height:34px; font-weight:800; color:#1E1E20; padding:4px 0 2px 0;">
-                                                            25<span style="font-size:20px; font-weight:700; color:#C8963E;">%</span>
+                                                            25<span
+                                                                style="font-size:20px; font-weight:700; color:#C8963E;">%</span>
                                                         </div>
                                                         <div
                                                             style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10.5px; line-height:14px; font-weight:600; color:#4A4844;">
@@ -682,7 +799,9 @@
                                                     </td>
 
                                                     <td width="2%" align="center" valign="middle" class="hide-m">
-                                                        <div style="width:1px; height:48px; background-color:#D6D3CE; margin:0 auto;"></div>
+                                                        <div
+                                                            style="width:1px; height:48px; background-color:#D6D3CE; margin:0 auto;">
+                                                        </div>
                                                     </td>
 
                                                     <!-- STAT 3: 30% -->
@@ -694,7 +813,8 @@
                                                         </div>
                                                         <div
                                                             style="font-family:'Playfair Display',Georgia,serif; font-size:30px; line-height:34px; font-weight:800; color:#1E1E20; padding:4px 0 2px 0;">
-                                                            30<span style="font-size:20px; font-weight:700; color:#C8963E;">%</span>
+                                                            30<span
+                                                                style="font-size:20px; font-weight:700; color:#C8963E;">%</span>
                                                         </div>
                                                         <div
                                                             style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10.5px; line-height:14px; font-weight:600; color:#4A4844;">
@@ -703,7 +823,9 @@
                                                     </td>
 
                                                     <td width="2%" align="center" valign="middle" class="hide-m">
-                                                        <div style="width:1px; height:48px; background-color:#D6D3CE; margin:0 auto;"></div>
+                                                        <div
+                                                            style="width:1px; height:48px; background-color:#D6D3CE; margin:0 auto;">
+                                                        </div>
                                                     </td>
 
                                                     <!-- STAT 4: 5X -->
@@ -715,7 +837,8 @@
                                                         </div>
                                                         <div
                                                             style="font-family:'Playfair Display',Georgia,serif; font-size:30px; line-height:34px; font-weight:800; color:#C8963E; padding:4px 0 2px 0;">
-                                                            5<span style="font-size:20px; font-weight:700; color:#C8963E;">X</span>
+                                                            5<span
+                                                                style="font-size:20px; font-weight:700; color:#C8963E;">X</span>
                                                         </div>
                                                         <div
                                                             style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10.5px; line-height:14px; font-weight:600; color:#4A4844;">
@@ -727,351 +850,11 @@
                                         </td>
                                     </tr>
 
-                                    <tr>
-                                        <td align="center" class="dm-cream" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:6px 20px 22px 20px;">
-                                            <div
-                                                style="font-family:'Playfair Display',Georgia,serif; font-style:italic; font-size:11px; line-height:15px; color:#8C8880;">
-                                                Customer-reported examples. Results vary by practice.
-                                            </div>
-                                        </td>
-                                    </tr>
-
-
-                                    <!-- ══════════════════════════════════════════════════════ -->
-                                    <!-- DR. SCOTT LEUNE QUOTE BOX                               -->
-                                    <!-- ══════════════════════════════════════════════════════ -->
-                                    <tr>
-                                        <td class="dm-cream mpx" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:10px 40px 24px 40px;">
-                                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
-                                                border="0" class="dm-white" bgcolor="#FFFFFF"
-                                                style="background-color:#FFFFFF; border:1px solid #D6D3CE; border-left:3px solid #C8963E; border-radius:6px; border-collapse:separate !important;">
-                                                <tr>
-                                                    <td style="padding:18px 22px;">
-                                                        <div class="dm-ink"
-                                                            style="font-family:'Playfair Display',Georgia,serif; font-style:italic; font-size:14px; line-height:22px; color:#1E1E20;">
-                                                            &ldquo;Adopting modern practice management software is requisite to maximizing efficiency and profitability. I consider Curve to be the best of the lot - the Tesla of the dental market.&rdquo;
-                                                        </div>
-                                                        <div
-                                                            style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:11px; line-height:15px; font-weight:700; color:#7E5C1C; margin-top:8px;">
-                                                            Dr. Scott Leune &bull; <span style="font-weight:400; color:#6E6C68;">Founder, Scott Leune Education</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-
-
-                                    <!-- ══════════════════════════════════════════════════════ -->
-                                    <!-- 4-CARD 2x2 FAQ SECTION (MATCHING ALIGNMENT & 28px)     -->
-                                    <!-- ══════════════════════════════════════════════════════ -->
-                                    <tr>
-                                        <td class="dm-cream mpx" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:34px 24px 8px 24px; text-align:center;">
-                                            <div
-                                                style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:11px; line-height:15px; font-weight:700; letter-spacing:2px; color:#7E5C1C; text-transform:uppercase; padding-bottom:6px;">
-                                                NEED SOME CLARITY?
-                                            </div>
-                                            <div class="h2 dm-ink"
-                                                style="font-family:'Playfair Display',Georgia,serif; font-size:24px; line-height:30px; font-weight:700; color:#1E1E20;">
-                                                COMMON QUESTIONS!
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <!-- 2x2 FAQ GRID -->
-                                    <tr>
-                                        <td class="dm-cream mpx" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:14px 24px 28px 24px;">
-
-                                            <!-- ROW 1 OF FAQ -->
-                                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;">
-                                                <tr>
-                                                    <!-- CARD 1: Tag Icon -->
-                                                    <td width="48%" valign="top" class="faq-col">
-                                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-                                                            class="dm-white" bgcolor="#FFFFFF"
-                                                            style="background-color:#FFFFFF; border:1.5px solid #C8963E; border-radius:10px; border-collapse:separate !important; height:100%;">
-                                                            <tr>
-                                                                <td class="faq-card-cell" height="88" valign="middle" style="padding:14px 14px; height:88px;">
-                                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                                                        <tr>
-                                                                            <td width="32" valign="middle" align="center" style="padding-right:10px;">
-                                                                                <img src="https://res.cloudinary.com/qi6tz0xr/image/upload/v1790508944/crushsvg-1790508938366.png"
-                                                                                    width="28" height="28" alt=""
-                                                                                    style="display:block; width:28px; height:28px;">
-                                                                            </td>
-                                                                            <td valign="middle" align="left">
-                                                                                <div class="dm-ink"
-                                                                                    style="font-family:Georgia,'Times New Roman',serif; font-size:13.5px; line-height:17px; font-weight:700; color:#1E1E20; padding-bottom:3px;">
-                                                                                    Is Pro-Dent Club free?
-                                                                                </div>
-                                                                                <div
-                                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:11px; line-height:15px; color:#555558;">
-                                                                                    Yes. Your Pro-Dent Club membership is completely free.
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-
-                                                    <td width="4%" class="hide-m">&nbsp;</td>
-
-                                                    <!-- CARD 2: Cart Icon -->
-                                                    <td width="48%" valign="top" class="faq-col">
-                                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-                                                            class="dm-white" bgcolor="#FFFFFF"
-                                                            style="background-color:#FFFFFF; border:1.5px solid #C8963E; border-radius:10px; border-collapse:separate !important; height:100%;">
-                                                            <tr>
-                                                                <td class="faq-card-cell" height="88" valign="middle" style="padding:14px 14px; height:88px;">
-                                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                                                        <tr>
-                                                                            <td width="32" valign="middle" align="center" style="padding-right:10px;">
-                                                                                <img src="https://res.cloudinary.com/qi6tz0xr/image/upload/v1790508977/crushsvg-1790508973054.png"
-                                                                                    width="28" height="28" alt=""
-                                                                                    style="display:block; width:28px; height:28px;">
-                                                                            </td>
-                                                                            <td valign="middle" align="left">
-                                                                                <div class="dm-ink"
-                                                                                    style="font-family:Georgia,'Times New Roman',serif; font-size:13.5px; line-height:17px; font-weight:700; color:#1E1E20; padding-bottom:3px;">
-                                                                                    Do I contract through P-DC?
-                                                                                </div>
-                                                                                <div
-                                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:11px; line-height:15px; color:#555558;">
-                                                                                    No, you work directly with Curve Dental. We facilitate the discount.
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-
-                                            <!-- ROW 2 OF FAQ -->
-                                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                                <tr>
-                                                    <!-- CARD 3: Network Icon -->
-                                                    <td width="48%" valign="top" class="faq-col">
-                                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-                                                            class="dm-white" bgcolor="#FFFFFF"
-                                                            style="background-color:#FFFFFF; border:1.5px solid #C8963E; border-radius:10px; border-collapse:separate !important; height:100%;">
-                                                            <tr>
-                                                                <td class="faq-card-cell" height="88" valign="middle" style="padding:14px 14px; height:88px;">
-                                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                                                        <tr>
-                                                                            <td width="32" valign="middle" align="center" style="padding-right:10px;">
-                                                                                <img src="https://res.cloudinary.com/qi6tz0xr/image/upload/v1790509036/crushsvg-1790509033590.png"
-                                                                                    width="28" height="28" alt=""
-                                                                                    style="display:block; width:28px; height:28px;">
-                                                                            </td>
-                                                                            <td valign="middle" align="left">
-                                                                                <div class="dm-ink"
-                                                                                    style="font-family:Georgia,'Times New Roman',serif; font-size:13.5px; line-height:17px; font-weight:700; color:#1E1E20; padding-bottom:3px;">
-                                                                                    Do I have to switch to Curve?
-                                                                                </div>
-                                                                                <div
-                                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:11px; line-height:15px; color:#555558;">
-                                                                                    Never. Explore the walkthrough and decide what fits your practice.
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-
-                                                    <td width="4%" class="hide-m">&nbsp;</td>
-
-                                                    <!-- CARD 4: Key Icon -->
-                                                    <td width="48%" valign="top" class="faq-col">
-                                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-                                                            class="dm-white" bgcolor="#FFFFFF"
-                                                            style="background-color:#FFFFFF; border:1.5px solid #C8963E; border-radius:10px; border-collapse:separate !important; height:100%;">
-                                                            <tr>
-                                                                <td class="faq-card-cell" height="88" valign="middle" style="padding:14px 14px; height:88px;">
-                                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                                                        <tr>
-                                                                            <td width="32" valign="middle" align="center" style="padding-right:10px;">
-                                                                                <img src="https://res.cloudinary.com/qi6tz0xr/image/upload/v1790509086/crushsvg-1790509083495.png"
-                                                                                    width="28" height="28" alt=""
-                                                                                    style="display:block; width:28px; height:28px;">
-                                                                            </td>
-                                                                            <td valign="middle" align="left">
-                                                                                <div class="dm-ink"
-                                                                                    style="font-family:Georgia,'Times New Roman',serif; font-size:13.5px; line-height:17px; font-weight:700; color:#1E1E20; padding-bottom:3px;">
-                                                                                    How do I claim 3 months free?
-                                                                                </div>
-                                                                                <div
-                                                                                    style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:11px; line-height:15px; color:#555558;">
-                                                                                    Schedule your walkthrough through the link above to unlock your offer.
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-
-                                        </td>
-                                    </tr>
-
-
-                                    <!-- FINAL CTA -->
-                                    <tr>
-                                        <td align="center" class="dm-cream mpx" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:18px 30px 36px 30px;">
-                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0"
-                                                align="center">
-                                                <tr>
-                                                    <td align="center" bgcolor="#121317"
-                                                        style="background-color:#121317; border:1px solid #C8963E; border-radius:4px;">
-                                                        <a href="https://www.curvedental.com/" target="_blank"
-                                                            style="display:inline-block; padding:15px 36px; font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:13px; line-height:17px; font-weight:700; letter-spacing:1.2px; color:#FFFFFF; text-decoration:none; text-transform:uppercase; border-radius:4px;">
-                                                            Schedule Your Walkthrough &nbsp;&rarr;
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-<!-- MEMBER ADVANTAGE: STATS & BADGES                       -->
-                                    <!-- ══════════════════════════════════════════════════════ -->
-                                    <tr>
-                                        <td class="dm-cream mpx" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:22px 36px 0 36px;">
-
-                                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
-                                                border="0">
-                                                <tr>
-
-                                                    <!-- STAT 1: $55M+ -->
-                                                    <td width="28%" valign="middle" align="left" class="stat-col">
-                                                        <table role="presentation" cellpadding="0" cellspacing="0"
-                                                            border="0">
-                                                            <tr>
-                                                                <td class="h2"
-                                                                    style="font-family:'Playfair Display',Georgia,serif; font-size:28px; line-height:32px; font-weight:600; color:#C8963E;">
-                                                                    $55M<span
-                                                                        style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:22px;">+</span>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="dm-muted"
-                                                                    style="padding-top:5px; font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:9px; line-height:13px; font-weight:700; letter-spacing:1px; color:#6E6C68; text-transform:uppercase;">
-                                                                    Collective Buying<br>Power
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-
-                                                    <!-- DIVIDER 1 -->
-                                                    <td width="4%" valign="middle" align="center" class="hide-m"
-                                                        style="font-size:0;">
-                                                        <table role="presentation" cellpadding="0" cellspacing="0"
-                                                            border="0">
-                                                            <tr>
-                                                                <td width="1" bgcolor="#D6D3CE"
-                                                                    style="width:1px; height:54px; background-color:#D6D3CE; font-size:0; line-height:0;">
-                                                                    &nbsp;</td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-
-                                                    <!-- STAT 2: 1,000+ -->
-                                                    <td width="28%" valign="middle" align="left" class="stat-col"
-                                                        style="padding-left:8px;">
-                                                        <table role="presentation" cellpadding="0" cellspacing="0"
-                                                            border="0">
-                                                            <tr>
-                                                                <td class="h2 dm-ink"
-                                                                    style="font-family:'Playfair Display',Georgia,serif; font-size:28px; line-height:32px; font-weight:600; color:#1E1E20;">
-                                                                    1,000<span
-                                                                        style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:22px; color:#C8963E;">+</span>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="dm-muted"
-                                                                    style="padding-top:5px; font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:9px; line-height:13px; font-weight:700; letter-spacing:1px; color:#6E6C68; text-transform:uppercase;">
-                                                                    Members<br>Strong
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-
-                                                    <!-- DIVIDER 2 -->
-                                                    <td width="4%" valign="middle" align="center" class="hide-m"
-                                                        style="font-size:0;">
-                                                        <table role="presentation" cellpadding="0" cellspacing="0"
-                                                            border="0">
-                                                            <tr>
-                                                                <td width="1" bgcolor="#D6D3CE"
-                                                                    style="width:1px; height:54px; background-color:#D6D3CE; font-size:0; line-height:0;">
-                                                                    &nbsp;</td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-
-                                                    <!-- BADGES (Right Stacked) -->
-                                                    <td width="36%" valign="middle" align="right"
-                                                        class="stat-badge-col">
-                                                        <table role="presentation" cellpadding="0" cellspacing="0"
-                                                            border="0" align="right" class="stat-badge-table"
-                                                            style="width:150px; max-width:150px;">
-                                                            <tr>
-                                                                <td align="center" style="padding-bottom:6px;">
-                                                                    <table role="presentation" width="100%"
-                                                                        cellpadding="0" cellspacing="0" border="0"
-                                                                        class="dm-white" bgcolor="#FFFFFF"
-                                                                        style="background-color:#FFFFFF; border:1px solid #C8963E; border-radius:6px; border-collapse:separate !important;">
-                                                                        <tr>
-                                                                            <td align="center"
-                                                                                style="padding:8px 10px; font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:9px; line-height:12px; font-weight:700; letter-spacing:1.1px; color:#7E5C1C; text-transform:uppercase;">
-                                                                                &#10003; &nbsp; Free Membership
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td align="center">
-                                                                    <table role="presentation" width="100%"
-                                                                        cellpadding="0" cellspacing="0" border="0"
-                                                                        class="dm-white" bgcolor="#FFFFFF"
-                                                                        style="background-color:#FFFFFF; border:1px solid #C8963E; border-radius:6px; border-collapse:separate !important;">
-                                                                        <tr>
-                                                                            <td align="center"
-                                                                                style="padding:8px 10px; font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:9px; line-height:12px; font-weight:700; letter-spacing:1.1px; color:#7E5C1C; text-transform:uppercase;">
-                                                                                &#10003; &nbsp; No Commitment
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-
-                                                </tr>
-                                            </table>
-
-                                        </td>
-                                    </tr>
 
                                     <!-- DIVIDER -->
                                     <tr>
                                         <td class="dm-cream mpx" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:34px 20px 0 20px;">
+                                            style="background-color:#F2F0ED; padding:28px 20px 0 20px;">
                                             <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
                                                 border="0">
                                                 <tr>
@@ -1083,63 +866,103 @@
                                         </td>
                                     </tr>
 
+                                    <!-- ══════════════════════════════════════════════════════ -->
+                                    <!-- QUESTIONS + CLOSING CTA                                -->
+                                    <!-- ══════════════════════════════════════════════════════ -->
 
-                                    <!-- ══════════════════════════════════════════════════════ -->
-                                    <!-- FOOTER                                                 -->
-                                    <!-- ══════════════════════════════════════════════════════ -->
+                                    <tr>
+                                        <td align="center" class="dm-cream mpx" bgcolor="#F2F0ED"
+                                            style="padding:28px 20px 0 20px; font-family:Georgia,'Times New Roman',serif; font-size:20px; line-height:24px; color:#1E1E20;">
+
+                                            Questions?<br>
+                                            Just Reply To This Email<br>
+                                            Happy To Walk You Through It.
+
+                                        </td>
+                                    </tr>
+
+
                                     <tr>
                                         <td align="center" class="dm-cream" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:26px 20px 0 20px;">
+                                            style="background-color:#F2F0ED; padding:18px 20px 0 20px;">
+
+                                            <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word"
+                        href="https://www.prodentclub.com/"
+                        style="height:40px; v-text-anchor:middle; width:170px;" arcsize="12%" stroke="f"
+                        fillcolor="#C8963E">
+                        <w:anchorlock/>
+                        <center style="color:#FFFFFF; font-family:Georgia,serif; font-size:11px; font-weight:bold;">
+                            Visit Our Website &rarr;
+                        </center>
+                    </v:roundrect>
+                    <![endif]-->
+
+                                            <!--[if !mso]><!-->
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                                align="center">
+                                                <tr>
+                                                    <td align="center" bgcolor="#C8963E"
+                                                        style="background-color:#C8963E; border-radius:4px;">
+                                                        <a href="https://www.prodentclub.com" target="_blank"
+                                                            style="display:block; padding:13px 26px; font-family:Georgia,'Times New Roman',serif; font-size:11px; line-height:14px; font-weight:700; letter-spacing:0.4px; color:#FFFFFF;">
+                                                            Visit Our Website &nbsp;&rarr;
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!--<![endif]-->
+
+                                        </td>
+                                    </tr>
+
+                                    <!-- ACCENT DIVIDER -->
+                                    <tr>
+                                        <td align="center" style="padding:28px 24px 24px 24px;">
+                                            <div
+                                                style="height:1px; background-color:#E2DFD8; width:100%; font-size:0; line-height:0;">
+                                                &nbsp;
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- EXECUTIVE FOOTER -->
+                                    <tr>
+                                        <td align="center" style="padding:0 24px 28px 24px;">
                                             <a href="https://www.prodentclub.com/" target="_blank">
                                                 <img src="https://res.cloudinary.com/dgstbxgwt/image/upload/c_crop,x_50,y_165,w_374,h_155/v1784648049/P-DC_Logo_toujnu.png"
                                                     width="116" alt="Pro-Dent Club"
                                                     style="display:block; width:116px; max-width:116px; height:auto; margin:0 auto;">
                                             </a>
-                                        </td>
-                                    </tr>
 
-                                    <tr>
-                                        <td align="center" class="dm-cream" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:14px 20px 0 20px;">
                                             <div
-                                                style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:2.4px; color:#7E5C1C; text-transform:uppercase;">
+                                                style="padding-top:10px; font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:9.5px; line-height:13px; font-weight:700; letter-spacing:1.4px; color:#C8963E; text-transform:uppercase;">
                                                 Where Dentistry Goes Pro
                                             </div>
-                                        </td>
-                                    </tr>
 
-                                    <tr>
-                                        <td align="center" class="dm-cream" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:12px 20px 0 20px;">
-                                            <div class="dm-muted"
-                                                style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:11px; line-height:17px; color:#6E6C68;">
+                                            <div
+                                                style="padding-top:12px; font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10px; line-height:14px; color:#888682;">
                                                 &copy; 2026 Pro-Dent Club. All rights reserved.
                                             </div>
-                                        </td>
-                                    </tr>
 
-                                    <tr>
-                                        <td align="center" class="dm-cream" bgcolor="#F2F0ED"
-                                            style="background-color:#F2F0ED; padding:10px 20px 26px 20px;">
                                             <div
-                                                style="font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:11px; line-height:17px; font-weight:600; color:#7E5C1C;">
-                                                <a href="https://www.prodentclub.com/vendors" target="_blank"
-                                                    style="color:#7E5C1C; text-decoration:none;">Manage preferences</a>
-                                                &nbsp;&middot;&nbsp;
-                                                <a href="https://www.prodentclub.com/vendors" target="_blank"
-                                                    style="color:#7E5C1C; text-decoration:none;">Unsubscribe</a>
+                                                style="padding-top:8px; font-family:'Rethink Sans',Helvetica,Arial,sans-serif; font-size:10px; line-height:14px; color:#888682;">
+                                                <a href="https://www.prodentclub.com/preferences" target="_blank"
+                                                    style="color:#888682; text-decoration:underline;">Manage
+                                                    preferences</a>
+                                                &nbsp;&bull;&nbsp;
+                                                <a href="https://www.prodentclub.com/unsubscribe" target="_blank"
+                                                    style="color:#888682; text-decoration:underline;">Unsubscribe</a>
                                             </div>
                                         </td>
                                     </tr>
 
                                 </table>
-                                <!-- END INNER LETTER -->
 
                             </td>
                         </tr>
 
                     </table>
-                    <!-- END OUTER LETTER -->
 
                 </td>
             </tr>
